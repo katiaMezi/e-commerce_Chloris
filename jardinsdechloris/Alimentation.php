@@ -33,7 +33,9 @@ while($itemsone = $statement->fetch())
          <div class="caption">
              <h4>'. $itemsone['designation'] . '</h4>
              <p> '.$itemsone['description']. '</p>
-                 <a href="#" class="btn-order" role="button"> <img src="./images/icons8-caddie-16.png"> Commander</a>
+             <h6><label for="quantite">Quantité:</label>
+             <input type="number" id="quantite" name="quantite" min="0" max="15"></h6>
+                 <a href="#" class="btn-order" role="button"> <img src="./images/icons8-caddie-16.png"> Commander</a> 
          </div>
         </div>
     </div>';
