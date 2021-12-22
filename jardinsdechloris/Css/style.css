@@ -123,7 +123,7 @@ html, body {
 
 /*accueil*/
  .heading {
-  padding-top: 200px;
+  padding-top: 180px;
    text-align: center;
    color: #ff0b9e;
    text-transform: uppercase;
@@ -171,6 +171,83 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
+/*connexion&panier*/
+/* Dropdown Button */
+#dropbtn {
+  background-color: #ff0b9e;
+  color: rgb(14, 13, 13);
+  padding: 9px;
+  font-size: 16px;
+  border:transparent;
+  cursor: pointer;
+}
+#dropbtn2 {
+  background-color: #ff0b9e;
+  color: rgb(14, 13, 13);
+  padding: 9px;
+  font-size: 16px;
+  border:transparent;
+  cursor: pointer;
+}
+/* Dropdown button on hover & focus */
+#dropbtn:hover, #dropbtn:focus {
+  background-color: #ff0b9e;
+}
+#dropbtn2:hover, #dropbtn2:focus {
+  background-color: #ff0b9e;
+}
+/* The container <div> - needed to position the dropdown content */
+#dropdown {
+  position: relative;
+ display: inline-block;
+}
+#dropdown2 {
+  position: relative;
+ display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) reussir à corriger la position */
+.dropdown-content {
+  display:none;
+  position:static;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content2 {
+  display:none;
+  position:static;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ff0b9e;
+}
+.dropdown-content2 a:hover {
+  background-color: #ff0b9e;
+}
+/* Show the dropdown menu  */
+.show {
+  display:block;
+}
+
 
 /*FOOTER*/
 .footer {
@@ -418,6 +495,124 @@ padding-left: 15px;
  padding-left: 15px;
  font-size: 2vw;
 }
+/*register*/
+
+  .register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
+  }
+div.inscription {
+  font-size: 50px;
+  text-align: center;
+  color: #FFFAFA;
+  background: rgb(112, 109, 109);
+  height: 70px;
+  font-family: "Indie Flower", cursive, sans-serif; 
+  }
+input[type=submit] {
+  border: solid  1px  violet;
+  margin-bottom: 10px;
+  float: right;
+  padding: 15px;
+  outline: none;
+  border-radius: 7px;
+  width: 120px;
+  }
+  input[type=text],
+  [type=password] {
+  border: solid  1px  violet;
+  margin-bottom: 10px;
+  padding: 16px;
+  outline: none;
+  border-radius: 7px;
+  width: 300px;
+  }
+  .erreur {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+   
+  }
+  a {
+  font-size: 14pt;
+  color: blue;
+  text-decoration: none;
+  font-weight: normal;
+  }
+  a:hover {
+  text-decoration: underline;
+  }
+/*login*/ 
+  .login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
+  }
+ .auth {
+  text-align: center;
+  color: #FFFAFA;
+  background: rgb(112, 109, 109);
+  height: 70px;
+  font-family: "Indie Flower", cursive, sans-serif; 
+  font-size: 50px;
+  }
+   
+  input[type=submit] {
+  border: solid  1px  violet;
+  margin-bottom: 10px;
+  float: right;
+  padding: 15px;
+  outline: none;
+  border-radius: 7px;
+  width: 120px;
+  }
+  input[type=text],
+  [type=password] {
+  border: solid  1px  violet;
+  margin-bottom: 10px;
+  padding: 16px;
+  outline: none;
+  border-radius: 7px;
+  width: 300px;
+  }
+  .erreur {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+
+  }
+   
+  a {
+  font-size: 14pt;
+  color: rgb(80, 168, 94);
+  text-decoration: none;
+  font-weight: normal;
+  }
+  a:hover {
+  text-decoration: underline;
+  }
+/*session*/
+h2.session {
+  text-align: center;
+  padding-top: 1em;
+  min-height:min-content;
+  padding-left: 5em;
+}
+a.decnx {
+  color:#c71c1c;
+  font-weight: bold;
+  padding-left: 80em;
+}
+a.decnx:hover{
+  text-decoration:underline;
+  color: #ff0b9e;
+}
+
 /*MEDIAS*/
 @media screen and (max-width: 976px) {
   .container-alim-fluid {
