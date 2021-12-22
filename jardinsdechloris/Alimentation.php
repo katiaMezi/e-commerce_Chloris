@@ -24,9 +24,9 @@ $itemsone = $statement->fetch();
 $statement->execute(array($itemsone));
 while($itemsone = $statement->fetch())
 {
-    echo ' 
-    
-    <div class="col-12 col-sm-6 col-md-4">
+    echo '  <div class="col-12 col-sm-6 col-md-4">
+    <form action="Panier.php" id="article" method="post">
+   
         <div class="thumbnail">
             <img src="./images/' . $itemsone['imageArticle'] . '" alt="...">
         <div class="price">' . number_format ($itemsone['prixUnitaire'], 2, '.', '').' €</div>
@@ -35,10 +35,11 @@ while($itemsone = $statement->fetch())
              <p> '.$itemsone['description']. '</p>
              <h6><label for="quantite">Quantité:</label>
              <input type="number" id="quantite" name="quantite" min="0" max="15"></h6>
-                 <a href="#" class="btn-order" role="button"> <img src="./images/icons8-caddie-16.png"> Commander</a> 
+                 <input type="submit" href="#" class="btn-order" role="button" img src="./images/icons8-caddie-16.png" value="Commander"> 
          </div>
         </div>
-    </div>';
+    </div>
+    </form>';
 
 
 }

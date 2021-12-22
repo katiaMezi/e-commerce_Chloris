@@ -33,17 +33,20 @@ while($itemstwo = $statement->fetch())
 {
     echo ' 
     <div class="col-12 col-sm-6 ">
+    <form action="Panier.php" id="article" method="post">
     <div class="thumbnail">
     <img src="./images/' . $itemstwo['imageArticle'] . '" alt="...">
     <div class="price">' . number_format ($itemstwo['prixUnitaire'], 2, '.', '').' €</div>
     <div class="caption">
     <h4>'. $itemstwo['designation'] . '</h4>
     <p> '. $itemstwo['description']. '</p>
+    <h6><label for="quantite">Quantité:</label>
+    <input type="number" id="quantite" name="quantite" min="0" max="15"></h6>
     <a href="#" class="btn-order" role="button"> <img src="./images/icons8-caddie-16.png"> Commander</a>
     </div>
     </div>
     </div>
-    '; 
+    </form>'; 
 
 }
 
